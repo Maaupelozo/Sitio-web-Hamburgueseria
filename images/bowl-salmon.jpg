@@ -1,0 +1,9 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <ellipse cx="200" cy="200" rx="120" ry="40" fill="#8D6E63"/>
+  <ellipse cx="200" cy="180" rx="100" ry="30" fill="#A1887F"/>
+  <rect x="160" y="160" width="80" height="20" fill="#8BC34A" rx="10"/>
+  <rect x="170" y="170" width="60" height="15" fill="#4CAF50" rx="8"/>
+  <circle cx="200" cy="185" r="8" fill="#FF9800"/>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Bowl de Salmón</text>
+</svg>

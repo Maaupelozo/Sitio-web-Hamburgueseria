@@ -1,0 +1,8 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <rect x="180" y="100" width="40" height="150" fill="#E91E63" rx="20"/>
+  <rect x="185" y="95" width="30" height="10" fill="#F06292" rx="5"/>
+  <circle cx="200" cy="90" r="8" fill="#E91E63"/>
+  <rect x="190" y="85" width="20" height="5" fill="#F06292" rx="2"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Smoothie de Frutos Rojos</text>
+</svg>

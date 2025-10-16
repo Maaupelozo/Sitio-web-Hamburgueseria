@@ -1,0 +1,19 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45a049;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#logoGradient)" opacity="0.1"/>
+  
+  <!-- Leaf icon -->
+  <path d="M20 15 C25 5, 35 5, 40 15 C35 25, 25 25, 20 15 Z" fill="url(#logoGradient)"/>
+  <path d="M30 15 L30 45" stroke="url(#logoGradient)" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Text -->
+  <text x="60" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">Green Bar</text>
+  <text x="60" y="45" font-family="Arial, sans-serif" font-size="14" fill="#666">Resistencia</text>
+</svg>

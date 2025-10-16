@@ -1,0 +1,10 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <ellipse cx="200" cy="200" rx="120" ry="40" fill="#8D6E63"/>
+  <ellipse cx="200" cy="180" rx="100" ry="30" fill="#A1887F"/>
+  <path d="M120 180 Q200 120 280 180" fill="#4CAF50" opacity="0.8"/>
+  <circle cx="160" cy="190" r="8" fill="#F44336"/>
+  <circle cx="240" cy="195" r="8" fill="#F44336"/>
+  <rect x="180" y="185" width="15" height="8" fill="#FFC107" rx="2"/>
+  <text x="200" y="270" font-family="Arial, sans-serif" font-size="14" fill="#666" text-anchor="middle">Ensalada Mediterránea</text>
+</svg>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotiseria Chiqui - Menú Digital</title>
+    <meta name="description" content="Menú digital de Green Bar Resistencia - Comida saludable y deliciosa">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                        <img src="./images/LOGO (2).png" alt="Rotisería Chiqui" class="logo">
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#menu" class="nav-link">Menú</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Slider Banner -->
+    <section id="inicio" class="hero">
+        <!-- Slider Banner -->
+        <div class="slider-banner">
+            <div class="slider-container">
+                <div class="slider-item active" data-category="hamburguesas">
+                    <div class="slider-image">
+                        <video src="./images/sliderHamburguesa.mp4" autoplay loop muted class="slider-img"></video>
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="hero-title">Rotiseria Chiqui</h1>
+                        <p class="hero-subtitle">Comida casera, fresca y deliciosa</p>
+                        <div class="slider-category">
+                            <h3>Hamburguesas</h3>
+                            <p>Deliciosas hamburguesas caseras con ingredientes frescos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-item" data-category="pizzas">
+                    <div class="slider-image">
+                        <video src="./images/SliderPiza.mp4" autoplay loop muted class="slider-img"></video>
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="hero-title">Rotiseria Chiqui</h1>
+                        <p class="hero-subtitle">Comida casera, fresca y deliciosa</p>
+                        <div class="slider-category">
+                            <h3>Pizzas</h3>
+                            <p>Pizzas artesanales con masa casera y los mejores ingredientes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-item" data-category="empanadas">
+                    <div class="slider-image">
+                        <img src="./images/placeholder.jpg" alt="Empanadas" class="slider-img">
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="hero-title">Rotiseria Chiqui</h1>
+                        <p class="hero-subtitle">Comida casera, fresca y deliciosa</p>
+                        <div class="slider-category">
+                            <h3>Empanadas</h3>
+                            <p>Empanadas caseras con diferentes rellenos tradicionales</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-item" data-category="sandwiches">
+                    <div class="slider-image">
+                        <img src="./images/placeholder.jpg" alt="Sandwiches" class="slider-img">
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="hero-title">Rotiseria Chiqui</h1>
+                        <p class="hero-subtitle">Comida casera, fresca y deliciosa</p>
+                        <div class="slider-category">
+                            <h3>Sandwiches</h3>
+                            <p>Deliciosos sandwiches especiales y comunes con ingredientes frescos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-item" data-category="bebidas">
+                    <div class="slider-image">
+                        <img src="./images/bebida.webp" alt="Bebidas" class="slider-img">
+                    </div>
+                    <div class="slider-content">
+                        <h1 class="hero-title">Rotiseria Chiqui</h1>
+                        <p class="hero-subtitle">Comida casera, fresca y deliciosa</p>
+                        <div class="slider-category">
+                            <h3>Bebidas</h3>
+                            <p>Refrescantes bebidas naturales y gaseosas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+                <button class="slider-btn prev" id="prevBtn">‹</button>
+                <button class="slider-btn next" id="nextBtn">›</button>
+            </div>
+            
+            <!-- Slider Indicators -->
+            <div class="slider-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accordion Menu Section -->
+    <section class="accordion-menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="accordion-menu">
+                <div class="accordion-menu-item active" data-category="hamburguesas">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/hamburguesa.png" alt="Hamburguesas" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Hamburguesas</h3>
+                            <p>Deliciosas hamburguesas caseras con ingredientes frescos</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-menu-item" data-category="pizzas">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/pizas.jpg" alt="Pizzas" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Pizzas</h3>
+                            <p>Pizzas artesanales con masa casera y los mejores ingredientes</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-menu-item" data-category="empanadas">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/ensalada-cesar.jpg" alt="Empanadas" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Empanadas</h3>
+                            <p>Empanadas caseras con diferentes rellenos tradicionales</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-menu-item" data-category="sandwiches">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/placeholder.jpg" alt="Sandwiches" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Sandwiches</h3>
+                            <p>Deliciosos sandwiches especiales y comunes con ingredientes frescos</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-menu-item" data-category="bebidas">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/bebida.webp" alt="Bebidas" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Bebidas</h3>
+                            <p>Refrescantes bebidas naturales y gaseosas</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-menu-item" data-category="promos">
+                    <div class="accordion-menu-header">
+                        <div class="accordion-menu-image">
+                            <img src="./images/bowl-salmon.jpg" alt="Promos" class="accordion-menu-img">
+                        </div>
+                        <div class="accordion-menu-content">
+                            <h3>Promos</h3>
+                            <p>Ofertas especiales y combos irresistibles</p>
+                            <span class="accordion-menu-arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="hamburguesas">Hamburguesas</button>
+                <button class="category-btn" data-category="pizzas">Pizzas</button>
+                <button class="category-btn" data-category="empanadas">Empanadas</button>
+                <button class="category-btn" data-category="sandwiches">Sandwiches</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+                <button class="category-btn" data-category="promos">Promos</button>
+            </div>
+            
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>En Green Bar Resistencia creemos que la comida saludable puede ser deliciosa y accesible para todos. Nuestro compromiso es ofrecer opciones frescas, nutritivas y sabrosas que te ayuden a mantener un estilo de vida equilibrado.</p>
+                    <p>Utilizamos ingredientes locales y orgánicos siempre que es posible, preparando cada plato con amor y dedicación.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./images/about-image.jpg" alt="Rotisería Chiqui" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. San Martín 1234<br>Resistencia, Chaco</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+54 362 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@greenbarresistencia.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Vie: 8:00 - 20:00<br>Sáb - Dom: 9:00 - 21:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="./images/logo.png" alt="Rotisería Chiqui" class="footer-logo">
+                    <p>Comida saludable y deliciosa en Resistencia</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Bar Resistencia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for menu items -->
+    <div id="menu-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="" class="modal-image">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <div class="modal-price">
+                        <span id="modal-price"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
