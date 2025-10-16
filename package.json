@@ -1,0 +1,33 @@
+{
+  "name": "green-bar-resistencia",
+  "version": "1.0.0",
+  "description": "Menú digital de Green Bar Resistencia - Comida saludable y deliciosa",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "npx http-server -p 8000 -o",
+    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "test": "echo 'Open index.html in browser to test'"
+  },
+  "keywords": [
+    "restaurant",
+    "menu",
+    "food",
+    "healthy",
+    "resistencia",
+    "chaco",
+    "argentina"
+  ],
+  "author": "Green Bar Resistencia",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/greenbarresistencia/menu-digital.git"
+  },
+  "bugs": {
+    "url": "https://github.com/greenbarresistencia/menu-digital/issues"
+  },
+  "homepage": "https://menu.fu.do/greenbarresistencia"
+}
