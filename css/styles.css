@@ -281,9 +281,10 @@ body {
 }
 
 .accordion-menu-item {
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
+    flex: 1 1 300px; /* Asegura que el item intente ocupar 300px, pero sea flexible */
+    width: 300px; /* Establece un ancho fijo para desktop */
+    min-width: 280px; /* Permite un mínimo para adaptarse si es necesario */
+    max-width: 300px; /* Mantiene el límite máximo */
     position: relative;
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -852,8 +853,8 @@ body {
     .accordion-menu-item {
         min-width: 100%;
         max-width: 100%;
-        height: 200px; /* Ajustar altura para móvil */
-        min-height: 200px !important; /* Asegura una altura mínima */
+        height: 60px; /* Ajustar altura para móvil */
+        min-height: 60px !important; /* Asegura una altura mínima */
         display: flex !important; /* Asegura que cada ítem sea un flex container */
     }
 
