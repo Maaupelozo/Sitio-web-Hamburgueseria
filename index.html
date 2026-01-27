@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Online - Panchos 22</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- MercadoPago SDK (Legacy requirement) -->
+  <script src="https://sdk.mercadopago.com/js/v2" defer></script>
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- 1. HEADER HERO (Floating Card style) -->
+    <header class="header-container" style="max-width: 1200px; margin: 0 auto; width: 100%; padding: 0 1rem;">
+      <div class="header-hero">
+        <img src="assets/img/banner.png" alt="Cover" class="hero-cover">
+        <div class="hero-logo-container">
+          <img src="assets/img/LOGO.png" alt="Logo" class="hero-logo">
+        </div>
+        <h1 class="hero-title">Rotiseria Chiqui</h1>
+
+        <!-- Store Info Badges -->
+        <div style="display:flex; gap:1rem; margin-top:1rem; flex-wrap:wrap; justify-content:center;">
+          <span
+            style="background:#e8f5e9; color:#2e7d32; padding:4px 12px; border-radius:20px; font-size:0.85rem; font-weight:600;">Abierto</span>
+          <span style="background:#f5f5f5; color:#666; padding:4px 12px; border-radius:20px; font-size:0.85rem;">🕐
+            20:00 - 00:00</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. MAIN LAYOUT (2 Columns) -->
+    <main class="main-layout">
+
+      <!-- LEFT: Content -->
+      <div class="left-column">
+
+        <!-- Search -->
+        <div class="search-card">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" class="search-input" placeholder="Buscar productos...">
+            <img src="assets/img/icons/search.svg" class="search-icon" onerror="this.style.display='none'">
+            <!-- Fallback SVG if icon missing -->
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" style="width:20px; right:1.5rem;">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="categories-card"
+          style="background:white; padding:1rem; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05);">
+          <nav class="categories-nav" id="categories-nav">
+            <!-- JS Generated -->
+          </nav>
+        </div>
+
+        <!-- Products -->
+        <div class="products-section">
+          <div class="products-grid" id="products-grid">
+            <!-- JS Generated -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Sticky Sidebar -->
+      <aside class="right-column">
+        <div class="sticky-cart-wrapper">
+          <div class="cart-card">
+            <div class="cart-header">
+              <h2 class="cart-title">Mi pedido</h2>
+            </div>
+
+            <div id="cart-items">
+              <!-- JS Generated -->
+              <div class="empty-state">
+                <span style="font-size:2.5rem; display:block; margin-bottom:0.5rem; opacity:0.5;">🛍️</span>
+                <p>Tu carrito está vacío</p>
+              </div>
+            </div>
+
+            <div class="cart-footer" style="margin-top:auto; border-top:1px solid #eee; padding-top:1rem;">
+              <div
+                style="display:flex; justify-content:space-between; font-weight:700; font-size:1.1rem; margin-bottom:1rem;">
+                <span>Total</span>
+                <span id="cart-total">$0</span>
+              </div>
+              <button
+                style="width:100%; background:var(--color-accent); color:white; border:none; padding:1rem; border-radius:8px; font-weight:700; font-size:1rem;">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+  </div>
+
+  <!-- Product Modal -->
+  <div id="product-modal" class="modal-overlay">
+    <div class="modal-content-wrapper">
+      <button class="modal-close-btn" onclick="closeProductModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Top: Image (White) -->
+      <div class="modal-image-container">
+        <img id="modal-img" src="" alt="" class="modal-img">
+      </div>
+
+      <!-- Bottom: Details (Yellow) -->
+      <div class="modal-details-container">
+        <div class="modal-header-row">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <span id="modal-price" class="modal-price-tag"></span>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div class="modal-qty-selector">
+          <button class="qty-btn-modal" onclick="updateModalQty(-1)">-</button>
+          <span id="modal-qty" class="qty-display">1</span>
+          <button class="qty-btn-modal" onclick="updateModalQty(1)">+</button>
+        </div>
+
+        <!-- Add Button -->
+        <button class="modal-add-btn" onclick="addToCartFromModal()">
+          <span>Agregar a mi pedido</span>
+          <span id="modal-total-btn">$0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

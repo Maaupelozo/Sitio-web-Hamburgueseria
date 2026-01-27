@@ -1,0 +1,140 @@
+{
+  "restaurant": {
+    "name": "Panchos 22",
+    "status": "closed",
+    "schedule": {
+      "deliveryHours": "19:30 a 01:00",
+      "days": ["DO", "LU", "MA", "MI", "JU", "VI", "SA"],
+      "logo": "assets/img/logo.png",
+      "backgroundImage": "assets/img/background.png"
+    }
+  },
+  "categories": [
+    {
+      "id": 1,
+      "name": "Panchos 22",
+      "icon": "assets/img/icons/panchos.svg",
+      "products": [
+        {
+          "id": 10,
+          "name": "ITALIANO",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/10"
+        },
+        {
+          "id": 11,
+          "name": "MEXICANO",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/11"
+        },
+        {
+          "id": 12,
+          "name": "ARGENTO",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/12"
+        },
+        {
+          "id": 13,
+          "name": "ALEMAN",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/13"
+        },
+        {
+          "id": 15,
+          "name": "AMERICANO",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/15"
+        },
+        {
+          "id": 22,
+          "name": "FRANCESS",
+          "price": 6000,
+          "priceWithoutTax": 4958.68,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/22"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bebidas",
+      "icon": "assets/img/icons/bebidas.svg",
+      "products": [
+        {
+          "id": 35,
+          "name": "PERONI",
+          "price": 3500,
+          "priceWithoutTax": 2892.56,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/35"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Burgers",
+      "icon": "assets/img/icons/burgers.svg",
+      "products": [
+        {
+          "id": 21,
+          "name": "HAMBUR CHEESE BACON",
+          "price": 11300,
+          "priceWithoutTax": 9338.84,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/21"
+        },
+        {
+          "id": 24,
+          "name": "HAMBUR PANCHOS 22",
+          "price": 11300,
+          "priceWithoutTax": 9338.84,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/24"
+        },
+        {
+          "id": 25,
+          "name": "HAMBUR CLASICA",
+          "price": 11300,
+          "priceWithoutTax": 9338.84,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/25"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Papas",
+      "icon": "assets/img/icons/papas.svg",
+      "products": [
+        {
+          "id": 26,
+          "name": "PAPAS CHEDAR Y BACON",
+          "price": 9000,
+          "priceWithoutTax": 7438.02,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/26"
+        },
+        {
+          "id": 27,
+          "name": "SALCHIPAPA",
+          "price": 9000,
+          "priceWithoutTax": 7438.02,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/27"
+        },
+        {
+          "id": 28,
+          "name": "PAPAS PANCHOS 22",
+          "price": 9000,
+          "priceWithoutTax": 7438.02,
+          "image": "https://fudo-apps-storage.s3.sa-east-1.amazonaws.com/production/317575/common/products/28"
+        },
+        {
+          "id": 29,
+          "name": "PAPAS CLASICAS",
+          "price": 7000,
+          "priceWithoutTax": 5785.12,
+          "image": "assets/img/icons/product-default.svg"
+        }
+      ]
+    }
+  ]
+}
